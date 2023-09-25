@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ping-Pong con Bot (Pelota)</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="game">
+    <div id="player"></div>
+    <div id="bot"></div>
+    <div id="ball"></div>
+    <div id="score">Puntos: <span id="scoreDisplay">0</span></div>
+  </div>
+
+  <div id="levelSelect">
+    <label for="level">Selecciona el nivel de velocidad: </label>
+    <select id="level" onchange="changeLevel()">
+      <option value="1">Nivel 1 (Lento)</option>
+      <option value="2" selected>Nivel 2 (Normal)</option>
+      <option value="3">Nivel 3 (Rápido)</option>
+    </select>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

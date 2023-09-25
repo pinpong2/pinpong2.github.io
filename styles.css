@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  #game {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  #player, #bot, #ball {
+    position: absolute;
+    background-color: #000;
+  }
+  
+  #player {
+    width: 10px;
+    height: 80px; /* Aumentamos la altura de la barra del jugador */
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #bot {
+    width: 10px;
+    height: 60px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #ball {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #ff0000; /* Color de la pelota */
+  }
+  
+  #score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #levelSelect {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para el nivel de velocidad */
+  #levelSelect label {
+    font-size: 16px;
+  }
+  
+  #levelSelect select {
+    font-size: 14px;
+    padding: 5px;
+  }
+  
